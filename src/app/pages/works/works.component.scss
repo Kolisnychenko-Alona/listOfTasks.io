@@ -1,0 +1,48 @@
+@import "../../shared/styles/variables";
+.container {
+   display: flex;
+   padding: 0 10px;
+   justify-content: space-between;
+   align-items: flex-end;
+   border-bottom: 1px solid $border-color;
+   .work {
+      height: 50px;
+      display: flex;
+      align-items: flex-end;
+      div {
+         // border: 1px solid transparent;
+         border-top-left-radius: 5px;
+         border-top-right-radius: 5px;
+         text-align: center;
+         line-height: 40px;
+         width: 100px;
+         height: 40px;
+         &:nth-child(1) {
+            width: 150px;
+         }
+      }
+   }
+   .back{
+      text-align: center;
+      width: 150px;
+      color: $dark-red;
+      line-height: 40px;
+      // width: 100px;
+      height: 40px;
+   }
+}
+.active-page{
+   color: $bgc-bt-green;
+   position: relative;
+   border: 1px solid $border-color;
+   border-bottom: 1px solid white;
+   &::after{
+      content: "";
+      display: block;
+      width: 98px;
+      height: 10px;
+      background-color: white;
+      position: absolute;
+      top: 35px;
+   }
+}

@@ -1,0 +1,13 @@
+@import '../../shared/styles/variables';
+
+button{
+   width:240px;
+   height: 40px;
+   background-color: $bgc-bt-green;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   &:hover{
+      background-color: $bgc-bt-green-hover;
+   }
+}

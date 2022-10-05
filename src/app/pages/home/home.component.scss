@@ -1,0 +1,55 @@
+@import '../../shared/styles/variables';
+
+.home{
+   width: 100%;
+   height: 90vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   .pages{
+      width: 280px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      
+      .img{
+         width: 100%;
+         height: 200px;
+         border-top-left-radius: 5px;
+         border-top-right-radius: 5px;
+         background-image: url('../../shared/images/image.png');
+         background-position: center;
+         background-size: cover;
+      }
+      &:nth-child(2){
+         .img{
+            background-image: url('../../shared/images/image3.png');
+         }
+      }
+      &:nth-child(3){
+         .img{
+            background-image: url('../../shared/images/image2.png');
+         }
+      }
+      
+      .title{
+         width: 100%;
+         height: 50px;
+         color: $dark-red;
+         font-size: 16px;
+         font-weight: bold;
+         text-align: center;
+         line-height: 50px;
+      }
+      .button{
+         height: 70px;
+         border-top: 1px solid $border-color;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: $bg-color;
+      }
+   }
+}
